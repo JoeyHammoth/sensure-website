@@ -30,6 +30,7 @@ a {
     display: flex;
     flex-direction: column;
     padding: 32px;
+    flex: 1;
 }
 
 .top-content {
@@ -72,4 +73,24 @@ a {
 .top-content-card-par {
     font-size: 24px;
     width: 800px;
+}
+
+.footer {
+    display: flex;
+    background-image: linear-gradient(to right, white, lightblue);
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.right-footer {
+    display: flex;
+    gap: 16px;
+}
+
+.right-footer li {
+    margin: 8px;
+    font-size: 20px;
 }
