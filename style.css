@@ -21,6 +21,10 @@ body {
     font-family: Inter;
 }
 
+.header-sections a:hover {
+    color: rgb(86, 86, 86);
+}
+
 .current-section {
     font-weight: bold;
 }
