@@ -119,6 +119,17 @@ a {
     text-align: center;
 }
 
+.mid-content-par button:hover {
+    background-color: #00f7a5;
+    border: 8px solid #00f7a5;
+}
+
+.mid-content-par button:active {
+    background-color: #00e498;
+    border: 8px solid #00e498;
+    transform: scale(0.98);
+}
+
 .mid-content-par img {
     border-radius: 100%; /* Makes the corners round, forming a circle */
     object-fit: cover; /* Ensures the image fills the circle without distortion */
@@ -160,6 +171,17 @@ a {
     border-radius: 8px;
     text-align: center;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+}
+
+.mid-content-card button:hover {
+    background-color: #e0e0e0;
+    border: 8px solid #e0e0e0;
+}
+
+.mid-content-card button:active {
+    background-color: #d0d0d0;
+    border: 8px solid #d0d0d0;
+    transform: scale(0.98);
 }
 
 .footer {
