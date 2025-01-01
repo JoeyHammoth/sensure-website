@@ -188,6 +188,19 @@ a {
     transform: scale(0.98);
 }
 
+.par-content {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.par-content-text {
+    font-family: Inter;
+    font-size: 32px;
+    width: 600px;
+    line-height: 1.5;
+}
+
 .footer {
     display: flex;
     background-image: linear-gradient(to right, white, lightblue);
