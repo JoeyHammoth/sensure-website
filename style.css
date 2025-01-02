@@ -417,7 +417,7 @@ a {
     font-family: Inter;
     font-size: 32px;
     margin-bottom: 64px;
-    width: 500px;
+    max-width: 500px;
 }
 
 .bottom-content-mid-card-three-profile {
@@ -523,7 +523,6 @@ a {
     justify-content: space-around;
     padding: 16px;
     gap: 500px;
-    flex-wrap: wrap;
 }
 
 ul {
@@ -543,4 +542,31 @@ ul {
     margin: 24px;
     font-size: 20px;
     font-family: Inter;
+}
+
+@media only screen and (max-width: 768px) {
+    .header img {
+        width: 100px;
+    }
+
+    .header-sections * {
+        font-size: 12px;
+    }
+
+    .top-content-title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .top-content-par {
+        font-size: 16px;
+    }
+
+    .top-content-card-title {
+        font-size: 32px;
+    }
+
+    .top-content-card-par {
+        font-size: 16px;
+    }
 }
