@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1200px) {
 html {
     margin: 0;
     padding: 0;
@@ -542,4 +543,5 @@ ul {
     margin: 24px;
     font-size: 20px;
     font-family: Inter;
+}
 }
