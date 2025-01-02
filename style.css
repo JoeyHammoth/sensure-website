@@ -703,12 +703,21 @@ ul {
         font-size: 12px;
     }
 
+    .top-content-card {
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
     .top-content-card-title {
         font-size: 20px;
+        max-width: 300px;
     }
 
     .top-content-card-par {
         font-size: 12px;
+        max-width: 300px;
     }
 
     .mid-content-par-left-text {
@@ -717,12 +726,13 @@ ul {
     }
 
     .mid-content-par img {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
     .mid-content-card-title {
         font-size: 20px;
+        max-width: 350px;
     }
 
     .par-content-text {
@@ -735,8 +745,8 @@ ul {
     }
 
     .bottom-content-top-main img {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
     .bottom-content-top-main-right-par {
