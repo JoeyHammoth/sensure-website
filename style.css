@@ -10,7 +10,8 @@ body {
     display: flex;
     justify-content: space-between;
     background-image: linear-gradient(to right, white, lightblue);
-    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .header-sections {
