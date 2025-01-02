@@ -538,9 +538,10 @@ ul {
 }
 
 .right-footer li {
-    margin: 24px;
+    margin: 16px 0;
     font-size: 20px;
     font-family: Inter;
+    max-width: 150px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -692,5 +693,158 @@ ul {
         font-size: 20px;
         margin-bottom: 16px;
         max-width: 350px;
+    }
+
+    .header-sections * {
+        font-size: 10px;
+    }
+
+    .top-content-par {
+        font-size: 12px;
+    }
+
+    .top-content-card-title {
+        font-size: 20px;
+    }
+
+    .top-content-card-par {
+        font-size: 12px;
+    }
+
+    .mid-content-par-left-text {
+        font-size: 12px;
+        max-width: 200px;
+    }
+
+    .mid-content-par img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .mid-content-card-title {
+        font-size: 20px;
+    }
+
+    .par-content-text {
+        font-size: 12px;
+        max-width: 250px;
+    }
+
+    .bottom-content-top-title {
+        font-size: 20px;
+    }
+
+    .bottom-content-top-main img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .bottom-content-top-main-right-par {
+        font-size: 12px;
+        max-width: 250px;
+    }
+
+    .bottom-content-mid-title {
+        font-size: 20px;
+    }
+
+    .bottom-content-mid-cards {
+        gap: 32px;
+    }
+
+    .bottom-content-mid-card-one {
+        width: 150px;
+        height: 75px;
+    }
+    
+    .bottom-content-mid-card-one-title {
+        font-size: 12px;
+        margin-bottom: 32px;
+    }
+
+    .bottom-content-mid-card-one-profile img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .bottom-content-mid-card-one-name {
+        font-size: 10px;
+    }
+    
+    .bottom-content-mid-card-one-role {
+        font-size: 10px;
+    }
+
+
+    .bottom-content-mid-card-two {
+        width: 150px;
+        height: 75px;
+    }
+    
+    .bottom-content-mid-card-two-title {
+        font-size: 12px;
+        margin-bottom: 32px;
+    }
+
+    .bottom-content-mid-card-two-profile img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .bottom-content-mid-card-two-name {
+        font-size: 10px;
+    }
+    
+    .bottom-content-mid-card-two-role {
+        font-size: 10px;
+    }
+
+
+    .bottom-content-mid-card-three {
+        width: 150px;
+        height: 75px;
+    }
+    
+    .bottom-content-mid-card-three-title {
+        font-size: 12px;
+        margin-bottom: 32px;
+    }
+
+    .bottom-content-mid-card-three-profile img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .bottom-content-mid-card-three-name {
+        font-size: 10px;
+    }
+    
+    .bottom-content-mid-card-three-role {
+        font-size: 10px;
+    }
+
+
+
+    .bottom-content-title {
+        font-size: 32px;
+    }
+
+    .right-footer li {
+        margin: 4px;
+        font-size: 12px;
+    }
+
+    .bottom-content-title {
+        font-size: 20px;
+    }
+
+    .footer img {
+        width: 100px;
+    }
+
+    .right-footer li {
+        margin: 8px 0;
+        padding: 0;
+        font-size: 10px;
     }
 }
