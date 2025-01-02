@@ -730,6 +730,12 @@ ul {
         height: 100px;
     }
 
+    .mid-content-card {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-top: 16px;
+    }
+
     .mid-content-card-title {
         font-size: 20px;
         max-width: 350px;
@@ -751,7 +757,7 @@ ul {
 
     .bottom-content-top-main-right-par {
         font-size: 12px;
-        max-width: 250px;
+        max-width: 200px;
     }
 
     .bottom-content-mid-title {
@@ -850,6 +856,14 @@ ul {
 
     .footer img {
         width: 100px;
+    }
+
+    .left-footer {
+        padding: 8px;
+    }
+    
+    .right-footer {
+        gap: 0;
     }
 
     .right-footer li {
