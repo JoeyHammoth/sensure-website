@@ -201,6 +201,69 @@ a {
     line-height: 1.5;
 }
 
+.bottom-content-top {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin: 16px;
+}
+
+.bottom-content-top-title {
+    font-family: Inter;
+    font-size: 48px;
+    margin-bottom: 48px;
+    font-weight: bold;
+}
+
+.bottom-content-top-main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom-content-top-main-right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.bottom-content-top-main-right-par {
+    font-family: Inter;
+    font-size: 32px;
+    width: 800px;
+}
+
+.bottom-content-top-main-right button {
+    font-family: Inter;
+    width: 250px;
+    height: 40px;
+    background-color: #00FFAB;
+    border: 8px solid #00FFAB;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.bottom-content-top-main-right button:hover {
+    background-color: #00f7a5;
+    border: 8px solid #00f7a5;
+}
+
+.bottom-content-top-main-right button:active {
+    background-color: #00e498;
+    border: 8px solid #00e498;
+    transform: scale(0.98);
+}
+
+.bottom-content-top-main img {
+    border-radius: 100%; /* Makes the corners round, forming a circle */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    overflow: hidden; /* Ensures content outside the circle is hidden */
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+}
+
+
+
 .footer {
     display: flex;
     background-image: linear-gradient(to right, white, lightblue);
