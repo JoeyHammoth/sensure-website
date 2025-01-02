@@ -738,7 +738,7 @@ ul {
 
     .mid-content-card-title {
         font-size: 20px;
-        max-width: 350px;
+        max-width: 200px
     }
 
     .par-content-text {
@@ -852,6 +852,11 @@ ul {
 
     .bottom-content-title {
         font-size: 20px;
+    }
+
+    .footer {
+        padding: 0;
+        justify-content: space-evenly;
     }
 
     .footer img {
