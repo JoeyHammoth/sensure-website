@@ -520,9 +520,8 @@ a {
 .footer {
     display: flex;
     background-image: linear-gradient(to right, white, lightblue);
-    justify-content: space-around;
     padding: 16px;
-    gap: 500px;
+    justify-content: space-between;
 }
 
 ul {
@@ -589,6 +588,103 @@ ul {
         max-width: 300px;
     }
 
+    .bottom-content-top-title {
+        font-size: 32px;
+    }
+
+    .bottom-content-top-main img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .bottom-content-top-main-right-par {
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    .bottom-content-mid-title {
+        font-size: 32px;
+    }
+
+    .bottom-content-mid-card-one {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .bottom-content-mid-card-one-title {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .bottom-content-mid-card-one-profile img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .bottom-content-mid-card-one-name {
+        font-size: 12px;
+    }
+    
+    .bottom-content-mid-card-one-role {
+        font-size: 12px;
+    }
+
+
+    .bottom-content-mid-card-two {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .bottom-content-mid-card-two-title {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .bottom-content-mid-card-two-profile img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .bottom-content-mid-card-two-name {
+        font-size: 12px;
+    }
+    
+    .bottom-content-mid-card-two-role {
+        font-size: 12px;
+    }
+
+
+    .bottom-content-mid-card-three {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .bottom-content-mid-card-three-title {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .bottom-content-mid-card-three-profile img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .bottom-content-mid-card-three-name {
+        font-size: 12px;
+    }
+    
+    .bottom-content-mid-card-three-role {
+        font-size: 12px;
+    }
+
+    .bottom-content-title {
+        font-size: 32px;
+    }
+
+    .right-footer li {
+        margin: 4px;
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 630px) {
