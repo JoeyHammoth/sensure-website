@@ -569,4 +569,32 @@ ul {
     .top-content-card-par {
         font-size: 16px;
     }
+
+    .mid-content-par-left-text {
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    .mid-content-par img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .mid-content-card-title {
+        font-size: 32px;
+    }
+
+    .par-content-text {
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .top-content-title {
+        font-size: 20px;
+        margin-bottom: 16px;
+        max-width: 350px;
+    }
 }
