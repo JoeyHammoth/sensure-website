@@ -206,6 +206,7 @@ a {
     flex-direction: column;
     padding: 16px;
     margin: 16px;
+    margin-bottom: 64px;
 }
 
 .bottom-content-top-title {
@@ -260,6 +261,177 @@ a {
     width: 300px;
     height: 300px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+}
+
+.bottom-content-mid {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin: 16px;
+}
+
+.bottom-content-mid-title {
+    font-family: Inter;
+    font-size: 48px;
+    margin-bottom: 48px;
+    font-weight: bold;
+}
+
+.bottom-content-mid-cards {
+    display: flex;
+    gap: 64px;
+}
+
+.bottom-content-mid-card-one {
+    padding: 32px;
+    width: 400px;
+    height: 200px;
+    background-color: #FFB6C1;
+    border-radius: 16px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-content-mid-card-one-title {
+    font-family: Inter;
+    font-size: 32px;
+    margin-bottom: 64px;
+}
+
+.bottom-content-mid-card-one-profile {
+    display: flex;
+    justify-content: start;
+    gap: 16px;
+}
+
+.bottom-content-mid-card-one-profile img {
+    border-radius: 100%; /* Makes the corners round, forming a circle */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    overflow: hidden; /* Ensures content outside the circle is hidden */
+    width: 60px;
+    height: 60px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+}
+
+.bottom-content-mid-card-one-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bottom-content-mid-card-one-name {
+    font-family: Inter;
+    font-size: 16px;
+}
+
+.bottom-content-mid-card-one-role {
+    font-family: Inter;
+    font-size: 16px;
+    color: grey;
+}
+
+
+
+.bottom-content-mid-card-two {
+    padding: 32px;
+    width: 400px;
+    height: 200px;
+    background-color: #8EC8E8;
+    border-radius: 16px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-content-mid-card-two-title {
+    font-family: Inter;
+    font-size: 32px;
+    margin-bottom: 64px;
+}
+
+.bottom-content-mid-card-two-profile {
+    display: flex;
+    justify-content: start;
+    gap: 16px;
+}
+
+.bottom-content-mid-card-two-profile img {
+    border-radius: 100%; /* Makes the corners round, forming a circle */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    overflow: hidden; /* Ensures content outside the circle is hidden */
+    width: 60px;
+    height: 60px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+}
+
+.bottom-content-mid-card-two-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bottom-content-mid-card-two-name {
+    font-family: Inter;
+    font-size: 16px;
+}
+
+.bottom-content-mid-card-two-role {
+    font-family: Inter;
+    font-size: 16px;
+    color: grey;
+}
+
+
+
+.bottom-content-mid-card-three {
+    padding: 32px;
+    width: 400px;
+    height: 200px;
+    background-color: #FFB6C1;
+    border-radius: 16px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-content-mid-card-three-title {
+    font-family: Inter;
+    font-size: 32px;
+    margin-bottom: 64px;
+    width: 500px;
+}
+
+.bottom-content-mid-card-three-profile {
+    display: flex;
+    justify-content: start;
+    gap: 16px;
+}
+
+.bottom-content-mid-card-three-profile img {
+    border-radius: 100%; /* Makes the corners round, forming a circle */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    overflow: hidden; /* Ensures content outside the circle is hidden */
+    width: 60px;
+    height: 60px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+}
+
+.bottom-content-mid-card-three-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bottom-content-mid-card-three-name {
+    font-family: Inter;
+    font-size: 16px;
+}
+
+.bottom-content-mid-card-three-role {
+    font-family: Inter;
+    font-size: 16px;
+    color: grey;
 }
 
 
