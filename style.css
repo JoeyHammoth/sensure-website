@@ -169,6 +169,24 @@ a {
     padding-top: 64px;
     padding-bottom: 64px;
     margin-top: 16px;
+    overflow: hidden;
+}
+
+.masked-img-one {
+    position: absolute;
+    top: -5vw; /* Position relative to container */
+    left: 50vw; /* Adjust to align the image */
+    width: 20vw; /* Ensure it is larger than the container */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.masked-img-two {
+    position: absolute;
+    top: 10vw; /* Position relative to container */
+    left: 65vw; /* Adjust to align the image */
+    width: 40vw; /* Ensure it is larger than the container */
+    transform: rotate(30deg);
+    height: auto; /* Maintain the aspect ratio */
 }
 
 .mid-content-card-left {
@@ -926,5 +944,17 @@ ul {
 
     .right-footer-user {
         padding: 0;
+    }
+
+    .masked-img-one {
+        top: -10vw; /* Position relative to container */
+        left: 20vw; /* Adjust to align the image */
+        width: 50vw; /* Ensure it is larger than the container */
+    }
+
+    .masked-img-two {
+        top: 10vw; /* Position relative to container */
+        left: 55vw; /* Adjust to align the image */
+        width: 60vw; /* Ensure it is larger than the container */
     }
 }
