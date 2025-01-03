@@ -755,7 +755,7 @@ ul {
 
     .par-content-text {
         font-size: 12px;
-        max-width: 400px;
+        max-width: 300px;
     }
 
     .par-content-text span {
@@ -775,9 +775,18 @@ ul {
         height: 100px;
     }
 
+    .bottom-content-top-main-right button {
+        max-width: 150px;
+        height: 50px;
+    }
+
     .bottom-content-top-main-right-par {
         font-size: 12px;
         max-width: 250px;
+    }
+
+    .bottom-content-mid {
+        margin-bottom: 4vw;
     }
 
     .bottom-content-mid-title {
