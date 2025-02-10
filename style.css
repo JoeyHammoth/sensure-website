@@ -138,6 +138,7 @@ a {
     border: 8px solid #00FFAB;
     border-radius: 8px;
     text-align: center;
+    box-shadow: 3px 4px 0 1px rgba(0, 0, 0, .3);
 }
 
 .mid-content-par button:hover {
@@ -210,7 +211,7 @@ a {
     border: 8px solid #E6E6E6;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    box-shadow: 3px 4px 0 2px rgba(0, 0, 0, .3);
 }
 
 .mid-content-card button:hover {
@@ -278,6 +279,7 @@ a {
     border: 8px solid #00FFAB;
     border-radius: 8px;
     text-align: center;
+    box-shadow: 3px 4px 0 1px rgba(0, 0, 0, .3);
 }
 
 .bottom-content-top-main-right button:hover {
@@ -505,6 +507,7 @@ a {
     color: white;
     border-radius: 8px;
     text-align: center;
+    box-shadow: 3px 4px 0 1px rgba(0, 0, 0, .4);
 }
 
 .bottom-content-button-two {
@@ -515,6 +518,7 @@ a {
     border: 8px solid #E6E6E6;
     border-radius: 8px;
     text-align: center;
+    box-shadow: 3px 4px 0 1px rgba(0, 0, 0, .4);
 }
 
 .bottom-content-button-one:hover {
