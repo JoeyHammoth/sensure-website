@@ -22,6 +22,10 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    transition: opacity 1s;
 }
 
 @keyframes gradient {
@@ -38,7 +42,7 @@ body {
 
 .logo {
     width: 50vw;
-	animation: logo-animation 5s ease-in-out;
+	animation: logo-animation 3s ease-in-out;
 }
 
 @keyframes logo-animation {
@@ -55,7 +59,8 @@ body {
     top: 0;
     z-index: 1000;
     padding: 1vw;
-    display: none;
+    display: flex;
+    z-index: 1;
     justify-content: space-between;
     background-image: linear-gradient(to right, white, lightblue);
     box-sizing: border-box;

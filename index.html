@@ -1431,7 +1431,12 @@
             </div>
         </div>
         <script>
+            const introPanel = document.querySelector(".intro");
             document.body.style.position = 'fixed';
+            setTimeout(function () {
+                document.body.style.position = '';
+                introPanel.style.opacity = 0;
+            }, 3000);
         </script>
     </body>
 </html>
