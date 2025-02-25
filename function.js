@@ -31,3 +31,47 @@ if (!sessionStorage.getItem("animationPlayed")) {
   introPanel.style.opacity = 0;
   introPanel.style.zIndex = -1;
 }
+
+// Sliding card functionality
+const slideImg = document.querySelector(".slide-img-one");
+const imgButtons = document.querySelectorAll(".sliding-card-dots div");
+
+imgButtons[0].addEventListener("click", function () {
+  // src property returns an absolute URL, not the relative path
+  if (slideImg.getAttribute("src") != "./images/img8.jpg") {
+    imgButtons[0].style.backgroundColor = "grey";
+    imgButtons[1].style.backgroundColor = "white";
+    imgButtons[2].style.backgroundColor = "white";
+    slideImg.classList.add("img-fade-out");
+    setTimeout(function () {
+      slideImg.src = "./images/img8.jpg";
+      slideImg.classList.remove("img-fade-out");
+    }, 250);
+  }
+});
+
+imgButtons[1].addEventListener("click", function () {
+  if (slideImg.getAttribute("src") != "./images/img9.jpg") {
+    imgButtons[0].style.backgroundColor = "white";
+    imgButtons[1].style.backgroundColor = "grey";
+    imgButtons[2].style.backgroundColor = "white";
+    slideImg.classList.add("img-fade-out");
+    setTimeout(function () {
+      slideImg.src = "./images/img9.jpg";
+      slideImg.classList.remove("img-fade-out");
+    }, 250);
+  }
+});
+
+imgButtons[2].addEventListener("click", function () {
+  if (slideImg.getAttribute("src") != "./images/img10.avif") {
+    imgButtons[0].style.backgroundColor = "white";
+    imgButtons[1].style.backgroundColor = "white";
+    imgButtons[2].style.backgroundColor = "grey";
+    slideImg.classList.add("img-fade-out");
+    setTimeout(function () {
+      slideImg.src = "./images/img10.avif";
+      slideImg.classList.remove("img-fade-out");
+    }, 250);
+  }
+});

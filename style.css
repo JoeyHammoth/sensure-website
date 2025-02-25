@@ -687,8 +687,9 @@ ul {
 
 .sliding-card-right img {
     width: 23vw;
-    border-radius: 16px;
+    border-radius: 32px;
     padding: 10px;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .sliding-card-dots {
@@ -701,6 +702,10 @@ ul {
     padding: 5px;
     background-color: white;
     border-radius: 100%;
+}
+
+.sliding-card-dots div:first-child {
+    background-color: grey;
 }
 
 .bottom-extra-two {
@@ -771,6 +776,11 @@ ul {
     left: 65%;
     bottom: 7%;
 }
+  
+/* This class will make the image transparent */
+.img-fade-out {
+    opacity: 0;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -779,7 +789,7 @@ ul {
     }
 
     .header-sections * {
-        font-size: 12px;
+            font-size: 12px;
     }
 
     .top-content-title {
@@ -915,9 +925,21 @@ ul {
         margin: 4px;
         font-size: 12px;
     }
+
+    .bottom-extra-two-circle {
+        padding: 100px;
+        left: 65%;
+        bottom: 20%;
+    }
 }
 
 @media only screen and (max-width: 630px) {
+    .bottom-extra-two-circle {
+        padding: 75px;
+        left: 65%;
+        bottom: 25%;
+    }
+
     .content {
         padding-top: 12vw;
     }
