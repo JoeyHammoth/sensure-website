@@ -23,7 +23,7 @@ body {
     justify-content: center;
     height: 100vh;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     transition: opacity 1s;
 }
@@ -60,7 +60,7 @@ body {
     z-index: 1000;
     padding: 1vw;
     display: flex;
-    z-index: 1;
+    z-index: 2;
     justify-content: space-between;
     background-image: linear-gradient(to right, white, lightblue);
     box-sizing: border-box;
@@ -626,7 +626,7 @@ ul {
 
 .sliding-card {
     background-image: linear-gradient(to right, pink, lightblue);
-    padding: 16px;
+    padding: 32px;
     border-radius: 16px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     padding-top: 32px;
@@ -634,7 +634,8 @@ ul {
     margin-top: 16px;
     overflow: hidden;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sliding-card-left {
@@ -644,13 +645,15 @@ ul {
 
 .sliding-card-heading {
     font-family: Inter;
+    font-size: 24px;
+    max-width: 70%;
 }
 
 .sliding-card-body {
     font-family: Inter;
-    font-size: 28px;
+    font-size: 48px;
     font-weight: bold;
-    margin-bottom: 16px;
+    margin-bottom: 40px;
 }
 
 .sliding-card-left button {
@@ -683,8 +686,9 @@ ul {
 }
 
 .sliding-card-right img {
-    width: 200px;
+    width: 23vw;
     border-radius: 16px;
+    padding: 10px;
 }
 
 .sliding-card-dots {
@@ -699,7 +703,74 @@ ul {
     border-radius: 100%;
 }
 
+.bottom-extra-two {
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+}
 
+.bottom-extra-two-title {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    max-width: 60%;
+}
+
+.bottom-extra-two-subheading {
+    font-family: Inter;
+    font-size: 24px;
+    margin-bottom: 40px;
+    max-width: 70%;
+}
+
+.bottom-extra-two-card-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.bottom-extra-two-card-top, .bottom-extra-two-card-bottom {
+    background-image: linear-gradient(to right, pink, lightblue);
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+
+.bottom-extra-two-card-top-heading, .bottom-extra-two-card-bottom-heading {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: bold;
+    width: 500px;
+    margin-bottom: 16px;
+}
+
+.bottom-extra-two-card-top-body, .bottom-extra-two-card-bottom-body {
+    font-family: Inter;
+    font-family: Inter;
+    font-size: 24px;
+    width: 800px;
+}
+
+.bottom-extra-two-circle {
+    position: absolute;
+    z-index: 1;
+    padding: 150px;
+    background-image: url('./images/img8.jpg');
+    background-size: cover;      
+    background-repeat: no-repeat; 
+    background-position: center;  
+    border-radius: 100%;
+    border: 5px solid black;
+    left: 65%;
+    bottom: 7%;
+}
 
 
 @media only screen and (max-width: 768px) {
