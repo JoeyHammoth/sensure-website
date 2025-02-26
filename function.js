@@ -35,43 +35,109 @@ if (!sessionStorage.getItem("animationPlayed")) {
 // Sliding card functionality
 const slideImg = document.querySelector(".slide-img-one");
 const imgButtons = document.querySelectorAll(".sliding-card-dots div");
+const imgLinks = [
+  "./images/img8.jpg",
+  "./images/img9.jpg",
+  "./images/img10.avif",
+];
 
 imgButtons[0].addEventListener("click", function () {
   // src property returns an absolute URL, not the relative path
-  if (slideImg.getAttribute("src") != "./images/img8.jpg") {
+  if (slideImg.getAttribute("src") != imgLinks[0]) {
     imgButtons[0].style.backgroundColor = "grey";
     imgButtons[1].style.backgroundColor = "white";
     imgButtons[2].style.backgroundColor = "white";
     slideImg.classList.add("img-fade-out");
     setTimeout(function () {
-      slideImg.src = "./images/img8.jpg";
+      slideImg.src = imgLinks[0];
       slideImg.classList.remove("img-fade-out");
     }, 250);
   }
 });
 
 imgButtons[1].addEventListener("click", function () {
-  if (slideImg.getAttribute("src") != "./images/img9.jpg") {
+  if (slideImg.getAttribute("src") != imgLinks[1]) {
     imgButtons[0].style.backgroundColor = "white";
     imgButtons[1].style.backgroundColor = "grey";
     imgButtons[2].style.backgroundColor = "white";
     slideImg.classList.add("img-fade-out");
     setTimeout(function () {
-      slideImg.src = "./images/img9.jpg";
+      slideImg.src = imgLinks[1];
       slideImg.classList.remove("img-fade-out");
     }, 250);
   }
 });
 
 imgButtons[2].addEventListener("click", function () {
-  if (slideImg.getAttribute("src") != "./images/img10.avif") {
+  if (slideImg.getAttribute("src") != imgLinks[2]) {
     imgButtons[0].style.backgroundColor = "white";
     imgButtons[1].style.backgroundColor = "white";
     imgButtons[2].style.backgroundColor = "grey";
     slideImg.classList.add("img-fade-out");
     setTimeout(function () {
-      slideImg.src = "./images/img10.avif";
+      slideImg.src = imgLinks[2];
       slideImg.classList.remove("img-fade-out");
     }, 250);
   }
 });
+
+slideImg.addEventListener("click", function () {
+  if (slideImg.getAttribute("src") == imgLinks[0]) {
+    imgButtons[0].style.backgroundColor = "white";
+    imgButtons[1].style.backgroundColor = "grey";
+    imgButtons[2].style.backgroundColor = "white";
+    slideImg.classList.add("img-fade-out");
+    setTimeout(function () {
+      slideImg.src = imgLinks[1];
+      slideImg.classList.remove("img-fade-out");
+    }, 250);
+  } else if (slideImg.getAttribute("src") == imgLinks[1]) {
+    imgButtons[0].style.backgroundColor = "white";
+    imgButtons[1].style.backgroundColor = "white";
+    imgButtons[2].style.backgroundColor = "grey";
+    slideImg.classList.add("img-fade-out");
+    setTimeout(function () {
+      slideImg.src = imgLinks[2];
+      slideImg.classList.remove("img-fade-out");
+    }, 250);
+  } else {
+    imgButtons[0].style.backgroundColor = "grey";
+    imgButtons[1].style.backgroundColor = "white";
+    imgButtons[2].style.backgroundColor = "white";
+    slideImg.classList.add("img-fade-out");
+    setTimeout(function () {
+      slideImg.src = imgLinks[0];
+      slideImg.classList.remove("img-fade-out");
+    }, 250);
+  }
+});
+
+let index = 0;
+setInterval(function () {
+  if (slideImg.getAttribute("src") == imgLinks[0]) {
+    index = 0;
+  } else if (slideImg.getAttribute("src") == imgLinks[0]) {
+    index = 1;
+  } else {
+    index = 2;
+  }
+  index = (index + 1) % imgLinks.length;
+  if (index == 0) {
+    imgButtons[0].style.backgroundColor = "grey";
+    imgButtons[1].style.backgroundColor = "white";
+    imgButtons[2].style.backgroundColor = "white";
+  } else if (index == 1) {
+    imgButtons[0].style.backgroundColor = "white";
+    imgButtons[1].style.backgroundColor = "grey";
+    imgButtons[2].style.backgroundColor = "white";
+  } else {
+    imgButtons[0].style.backgroundColor = "white";
+    imgButtons[1].style.backgroundColor = "white";
+    imgButtons[2].style.backgroundColor = "grey";
+  }
+  slideImg.classList.add("img-fade-out");
+  setTimeout(function () {
+    slideImg.src = imgLinks[index];
+    slideImg.classList.remove("img-fade-out");
+  }, 250);
+}, 10000);

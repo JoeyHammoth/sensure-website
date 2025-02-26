@@ -17,7 +17,7 @@ body {
 .intro {
     background: linear-gradient(-45deg, #65aec8, #fdc1cc, #aed7e6, #ffa7b7);
     background-size: 400% 400%; 
-	animation: gradient 15s ease infinite;
+	animation: gradient 15s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 	height: 100vh;
     display: flex;
     justify-content: center;
@@ -120,7 +120,9 @@ a {
 }
 
 .top-content-card {
-    background-image: linear-gradient(to right, pink, lightblue);
+    background: linear-gradient(-45deg, #65aec8, #fdc1cc, #aed7e6, #ffa7b7);
+    background-size: 400% 400%; 
+	animation: gradient 15s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     padding: 32px;
     border-radius: 16px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
@@ -204,7 +206,9 @@ a {
 }
 
 .mid-content-card {
-    background-image: linear-gradient(to right, pink, lightblue);
+    background: linear-gradient(-45deg, #fbc2cd, #fff7ad, #ffa7b7, #fff7ad);
+    background-size: 400% 400%; 
+	animation: gradient 15s ease infinite;
     padding: 32px;
     border-radius: 16px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
@@ -625,7 +629,9 @@ ul {
 }
 
 .sliding-card {
-    background-image: linear-gradient(to right, pink, lightblue);
+    background: linear-gradient(-45deg, #65aec8, #fff7ad, #65aec8, #fff7ad);
+    background-size: 400% 400%; 
+	animation: gradient 15s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     padding: 32px;
     border-radius: 16px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
@@ -719,7 +725,9 @@ ul {
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 40px;
+    margin-top: 30px;
     max-width: 60%;
+
 }
 
 .bottom-extra-two-subheading {
@@ -736,7 +744,9 @@ ul {
 }
 
 .bottom-extra-two-card-top, .bottom-extra-two-card-bottom {
-    background-image: linear-gradient(to right, pink, lightblue);
+    background: linear-gradient(-45deg, #65aec8, #fdc1cc, #aed7e6, #ffa7b7);
+    background-size: 400% 400%; 
+	animation: gradient 15s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     padding: 32px;
     border-radius: 16px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
@@ -784,6 +794,15 @@ ul {
 
 
 @media only screen and (max-width: 768px) {
+    .bottom-extra-two-title, .bottom-extra-two-card-top-heading, .bottom-extra-two-card-bottom-heading, .sliding-card-body {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .bottom-extra-two-subheading, .bottom-extra-two-card-top-body, .bottom-extra-two-card-bottom-body, .sliding-card-heading {
+        font-size: 16px;
+    }
+
     .header img {
         width: 100px;
     }
@@ -934,6 +953,16 @@ ul {
 }
 
 @media only screen and (max-width: 630px) {
+    .bottom-extra-two-title, .bottom-extra-two-card-top-heading, .bottom-extra-two-card-bottom-heading, .sliding-card-body {
+        font-size: 20px;
+        margin-bottom: 16px;
+        max-width: 350px;
+    }
+
+    .bottom-extra-two-subheading, .bottom-extra-two-card-top-body, .bottom-extra-two-card-bottom-body, .sliding-card-heading {
+        font-size: 12px;
+    }
+
     .bottom-extra-two-circle {
         padding: 75px;
         left: 65%;
