@@ -881,6 +881,36 @@ ul {
     border-radius: 10%;
 }
 
+.top-content-card-news {
+    border: 14px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(white, white), 
+                        linear-gradient(-45deg, #65aec8, #fdc1cc, #aed7e6, #ffa7b7);
+
+    background-size: 400% 400%; 
+    animation: gradient 15s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+}
+
+
+.news-container {
+    padding: 64px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.news-card-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-bar {
+    display: flex;
+}
+
 
 /* This class will make the image transparent */
 .img-fade-out {
