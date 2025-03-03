@@ -848,6 +848,19 @@ ul {
     color: white;
 }
 
+.about-images-two:hover * {
+    color: white;
+}
+
+.about-images-three:hover * {
+    color: white;
+}
+
+.about-images-four:hover * {
+    color: white;
+}
+
+
 .about-images-two:hover {
     background-image: url(./team/team-one.jpg);
     background-size: 250% 250%; 
@@ -902,6 +915,7 @@ ul {
     display: flex;
     justify-content: space-evenly; 
     align-items: center;
+    padding-bottom: 32px;
 }
 
 .about-content img {
